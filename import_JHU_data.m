@@ -1,4 +1,4 @@
-function timeseries19covidConfirmed = import_git(filename, dataLines)
+function timeseries19covidConfirmed = import_JHU_data(filename, dataLines)
 %IMPORTFILE Import data from a text file
 %  TIMESERIES19COVIDCONFIRMED = IMPORTFILE(FILENAME) reads data from
 %  text file FILENAME for the default selection.  Returns the data as a
