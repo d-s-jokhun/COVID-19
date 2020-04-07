@@ -27,7 +27,7 @@ for count=1:size(Y,1)
     end
 end
 
-disp(['DailyIncrease_',fig_title])
+
 h=figure ('Name',['DailyIncrease_',fig_title]);
 set(h, 'Position', Fig_Size);
 for graph_count=1:size(Graphs,2)
@@ -39,8 +39,9 @@ for graph_count=1:size(Graphs,2)
         grid minor
     end
 end
+disp(['DailyIncrease_',fig_title])
 
-disp(['Grad of DailyIncrease_',fig_title])
+
 h=figure ('Name',['Grad of DailyIncrease_',fig_title]);
 set(h, 'Position', Fig_Size);
 for graph_count=1:size(Graphs,2)
@@ -52,7 +53,7 @@ for graph_count=1:size(Graphs,2)
         grid minor
     end
 end
-
+disp(['Grad of DailyIncrease_',fig_title])
 
 
 %% Fitting exponential and sigmoid and plotting on log
@@ -74,7 +75,7 @@ parfor count=1:size(Y,1)
     end
 end
 
-disp(['',fig_title])
+
 h=figure ('Name',fig_title);
 set(h, 'Position', Fig_Size);
 for graph_count=1:size(Graphs,2)
@@ -90,8 +91,10 @@ for graph_count=1:size(Graphs,2)
         grid minor
     end
 end
+disp(['',fig_title])
 
-disp(['Log_',fig_title])
+
+
 h=figure ('Name',['Log_',fig_title]);
 set(h, 'Position', Fig_Size);
 for graph_count=1:size(Graphs,2)
@@ -107,7 +110,7 @@ for graph_count=1:size(Graphs,2)
         grid minor
     end
 end
-
+disp(['Log_',fig_title])
 
 
 %% Gradient
@@ -130,7 +133,7 @@ for count=1:size(Y,1)
     end
 end
 
-disp(['Gradient_',fig_title])
+
 h=figure ('Name',['Gradient_',fig_title]);
 set(h, 'Position', Fig_Size);
 for graph_count=1:size(Graphs,2)
@@ -142,7 +145,7 @@ for graph_count=1:size(Graphs,2)
         grid minor
     end
 end
-
+disp(['Gradient_',fig_title])
 
 
 %% Goodness of fit of exp vs sigmoid
@@ -168,7 +171,7 @@ for count=1:size(Y,1)
     end
 end
 
-disp(['Goodness of Fit_',fig_title])
+
 h=figure ('Name',['Goodness of Fit_',fig_title]);
 set(h, 'Position', Fig_Size);
 for graph_count=1:size(Graphs,2)
@@ -185,6 +188,8 @@ for graph_count=1:size(Graphs,2)
         grid minor
     end
 end
+disp(['Goodness of Fit_',fig_title])
+
 
 end
 
